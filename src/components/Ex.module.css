@@ -1,0 +1,122 @@
+body {
+  text-align: center;
+  font-weight: bold;
+  margin: 0px auto;
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 8vh;
+  border-bottom: 1px solid red;
+  position: fixed;
+  z-index: 1;
+}
+header > h1 {
+  font-size: 1.3rem;
+  margin-left: 10px;
+}
+
+header > .toggle {
+  font-size: 2rem;
+  line-height: 8vh;
+}
+
+header > .globalMenu {
+  background-color: rgba(0, 0, 0, 0.856);
+  border-radius: 20px;
+  width: 50vw;
+  max-width: 300px;
+  height: 45vh;
+  margin-top: 10px;
+
+  display: none;
+}
+header > .toggle:active ~ .globalMenu {
+  display: block;
+}
+header > .toggle:active {
+  display: none;
+}
+
+header > .globalMenu > menu {
+  margin-top: 80px;
+  margin-right: 30px;
+  font-size: 1.5rem;
+}
+header > .globalMenu > menu > li {
+  color: #fff;
+  list-style: none;
+  text-align: center;
+  margin: 20px;
+  margin-top: 30px;
+}
+
+.title {
+  text-align: left;
+  padding-top: 200px;
+  margin: 0 20px;
+}
+.title > h1 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  line-height: 1;
+}
+
+.box {
+  text-align: center;
+  margin-top: 80px;
+  position: relative;
+}
+.box > .txt {
+  margin: 150px 0;
+}
+
+.box > .img {
+  width: 450px;
+  height: 300px;
+  background-image: linear-gradient(#ffd900 0%, #ffbb00 100%);
+  border-radius: 20px;
+  margin: 20px auto;
+  margin: 0 20px;
+}
+
+.img1 {
+  background-image: url(../images/CartoonMac.png);
+  background-size: cover;
+  width: 380px;
+  height: 380px;
+  position: absolute;
+  top: -50px;
+  margin: auto;
+}
+.img2 {
+  background-image: url(../images/SplashColor.png);
+  background-size: cover;
+  z-index: 1;
+  width: 380px;
+  height: 380px;
+  margin: auto;
+}
+
+.swiperCom {
+  margin-bottom: 200px;
+  border-radius: 30px;
+  text-align: center;
+  margin: 0 20px;
+}
+.swiperCom > .txt {
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  color: #ddd;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
